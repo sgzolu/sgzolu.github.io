@@ -1,0 +1,186 @@
+/* Home Page Specific Styles */
+
+.home-content {
+    padding: 40px 0;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 80px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    padding-top: 20px;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 500;
+}
+
+.emoji {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.bio {
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.languages {
+    margin-bottom: 30px;
+}
+
+.languages p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Research Overview */
+.research-overview {
+    margin-bottom: 80px;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.research-overview h2 {
+    margin-bottom: 20px;
+}
+
+.research-overview p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.quick-links {
+    margin-top: 30px;
+}
+
+/* Recent Updates */
+.recent-updates {
+    margin-bottom: 60px;
+}
+
+.updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.update-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 4px solid #000;
+}
+
+.update-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+.update-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.update-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.update-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.read-more:hover {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin: 0 auto;
+    }
+    
+    .social-media-buttons {
+        justify-content: center;
+    }
+    
+    .research-overview {
+        padding: 30px 20px;
+    }
+    
+    .updates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .update-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .intro {
+        font-size: 16px;
+    }
+    
+    .research-overview {
+        padding: 20px 15px;
+    }
+}
